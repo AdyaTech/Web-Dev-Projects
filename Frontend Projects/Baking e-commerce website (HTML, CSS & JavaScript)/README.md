@@ -24,5 +24,6 @@
     *   **Privacy Policy Page**: Information about data usage and privacy guidelines.
         
     *   **All Recipes Page**: Collection of bakery recipes available for users.
+
     
 *   **CSS Animations**: Smooth hover effects and transitions for a polished user experience.
