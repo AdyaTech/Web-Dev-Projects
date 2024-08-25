@@ -24,9 +24,5 @@
     *   **Privacy Policy Page**: Information about data usage and privacy guidelines.
         
     *   **All Recipes Page**: Collection of bakery recipes available for users.
-        
-*   **Responsive Design**: Mobile-first approach ensuring all pages are optimized across devices.
-    
-*   **Shopping Cart**: Dynamic updates, item removal, and price calculation.
     
 *   **CSS Animations**: Smooth hover effects and transitions for a polished user experience.
