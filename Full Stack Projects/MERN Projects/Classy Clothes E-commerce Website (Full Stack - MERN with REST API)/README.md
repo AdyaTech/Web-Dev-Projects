@@ -44,7 +44,7 @@ Ensure you have the following installed on your system:
    npm run dev
    ```
    
-3. Open your browser and visit `http://localhost:3000`.
+3. Open your browser and visit `http://localhost:5173/`.
    
 
 ## 🖼️ Screenshots
