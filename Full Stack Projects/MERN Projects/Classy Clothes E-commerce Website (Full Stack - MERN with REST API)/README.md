@@ -29,12 +29,8 @@ Ensure you have the following installed on your system:
 
 
 ### Installation
-1. Clone the repository:
-   
-   ```bash
-   git clone https://github.com/yourusername/classy-clothes.git
-   cd classy-clothes
-   ```
+1. Download the sourcecode for Classy Clothes E-commerce Website.
+
 2. Install dependencies for both frontend and backend:
    
    ```bash
