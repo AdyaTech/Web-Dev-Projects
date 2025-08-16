@@ -1,0 +1,586 @@
+
+<!doctype html>
+<!-- First they ignore you, then they laugh at you, then they fight you, then you win. - Mohandas Karamchand Gandhi -->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- Inlined Google Fonts loading-->
+	<link href="//fonts.cdnfonts.com/css/open-sans?styles=17414,20530,17411,17412,17413,17415,17416,17407,17408,17409,17410" rel="stylesheet">
+
+	<title>HackerRank - Online Coding Tests and Technical Interviews</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v12.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="HackerRank is the market-leading coding test and interview solution for hiring developers. Start hiring at the pace of innovation!"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.hackerrank.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="HackerRank - Online Coding Tests and Technical Interviews" />
+<meta property="og:description" content="HackerRank is the market-leading coding test and interview solution for hiring developers. Start hiring at the pace of innovation!" />
+<meta property="og:url" content="https://www.hackerrank.com/" />
+<meta property="og:site_name" content="HackerRank" />
+<meta property="og:image" content="https://www.hackerrank.com/wp-content/uploads/2022/10/Homepage-Social-Share-1024x468.png" />
+<meta property="og:image:secure_url" content="https://www.hackerrank.com/wp-content/uploads/2022/10/Homepage-Social-Share-1024x468.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="468" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="HackerRank is the market-leading coding test and interview solution for hiring developers. Start hiring at the pace of innovation!" />
+<meta name="twitter:title" content="HackerRank - Online Coding Tests and Technical Interviews" />
+<meta name="twitter:site" content="@hackerrank" />
+<meta name="twitter:image" content="https://www.hackerrank.com/wp-content/uploads/2022/10/Homepage-Social-Share.png" />
+<meta name="twitter:creator" content="@hackerrank" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.hackerrank.com/#organization","name":"HackerRank","url":"https://www.hackerrank.com/","sameAs":["https://www.facebook.com/hackerrank/","https://www.instagram.com/hackerrank/","https://www.linkedin.com/company/hackerrank","https://twitter.com/hackerrank"],"logo":{"@type":"ImageObject","@id":"https://www.hackerrank.com/#logo","url":"https://www.hackerrank.com/wp-content/uploads/2018/08/hackerrank_logo.png","width":334,"height":36,"caption":"HackerRank"},"image":{"@id":"https://www.hackerrank.com/#logo"}},{"@type":"WebSite","@id":"https://www.hackerrank.com/#website","url":"https://www.hackerrank.com/","name":"HackerRank","publisher":{"@id":"https://www.hackerrank.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.hackerrank.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.hackerrank.com/#primaryimage","url":"https://www.hackerrank.com/wp-content/uploads/2022/10/Homepage-Social-Share.png","width":3360,"height":1536},{"@type":"WebPage","@id":"https://www.hackerrank.com/#webpage","url":"https://www.hackerrank.com/","inLanguage":"en-US","name":"HackerRank - Online Coding Tests and Technical Interviews","isPartOf":{"@id":"https://www.hackerrank.com/#website"},"about":{"@id":"https://www.hackerrank.com/#organization"},"primaryImageOfPage":{"@id":"https://www.hackerrank.com/#primaryimage"},"datePublished":"2022-11-07T14:19:31-08:00","dateModified":"2024-04-24T05:13:04-07:00","description":"HackerRank is the market-leading coding test and interview solution for hiring developers. Start hiring at the pace of innovation!"}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="HackerRank &raquo; Feed" href="https://www.hackerrank.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="HackerRank &raquo; Comments Feed" href="https://www.hackerrank.com/comments/feed/" />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hackerrank-style-css' href='https://www.hackerrank.com/wp-content/themes/hackerrank/style.min.css?ver=1729007648' type='text/css' media='all' />
+<link rel='stylesheet' id='heateor_sss_frontend_css-css' href='https://www.hackerrank.com/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.67' type='text/css' media='all' />
+<style id='heateor_sss_frontend_css-inline-css' type='text/css'>
+.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}div.heateor_sss_horizontal_sharing a.heateor_sss_button_instagram span{background:#fff!important;}div.heateor_sss_standard_follow_icons_container a.heateor_sss_button_instagram span{background:#fff}.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{background-color:#fff!important;background:#fff!important;color:#B7C9CC;border-width:0px;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}
+</style>
+<script type="text/javascript" id="jquery-core-js-extra">
+/* <![CDATA[ */
+var adminAjax = {"url":"https:\/\/www.hackerrank.com\/wp-admin\/admin-ajax.php","nonce":"46fefbd146"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="search-filter-pro-bb-js-extra">
+/* <![CDATA[ */
+var SFVC_DATA = {"ajax_url":"https:\/\/www.hackerrank.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/www.hackerrank.com\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/plugins/search-filter-bb/assets/v2/js/frontend.js?ver=1.2.0" id="search-filter-pro-bb-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hackerrank.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://www.hackerrank.com/' />
+<style>@font-face{font-family:"hackerrank-icon";src:url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.eot");src:url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.eot?#iefix") format("eot"),url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.woff2") format("woff2"),url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.woff") format("woff"),url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.ttf") format("truetype"),url("https://www.hackerrank.com/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.svg#hackerrank-icon") format("svg")</style><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_cursor_favicon_480px-300x300.png" />
+	<!-- Anti-flicker snippet (recommended) 
+    <style>.async-hide { opacity: 0 !important} </style>
+
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-PX2ZJF2':true});</script>--> <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PX2ZJF2');</script>
+    <!-- End Google Tag Manager -->      <!-- jsCookies -->
+        <script type="text/javascript">
+      if(function(factory){if("function"==typeof define&&define.amd)define(factory);else if("object"==typeof exports)module.exports=factory();else{var OldCookies=window.Cookies,api=window.Cookies=factory();api.noConflict=function(){return window.Cookies=OldCookies,api}}}(function(){function extend(){for(var i=0,result={};i<arguments.length;i++){var attributes=arguments[i];for(var key in attributes)result[key]=attributes[key]}return result}function init(converter){function api(key,value,attributes){var result;if("undefined"!=typeof document){if(arguments.length>1){if(attributes=extend({path:"/"},api.defaults,attributes),"number"==typeof attributes.expires){var expires=new Date;expires.setMilliseconds(expires.getMilliseconds()+864e5*attributes.expires),attributes.expires=expires}try{result=JSON.stringify(value),/^[\{\[]/.test(result)&&(value=result)}catch(e){}return value=converter.write?converter.write(value,key):encodeURIComponent(String(value)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),key=encodeURIComponent(String(key)),key=key.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),key=key.replace(/[\(\)]/g,escape),document.cookie=[key,"=",value,attributes.expires&&"; expires="+attributes.expires.toUTCString(),attributes.path&&"; path="+attributes.path,attributes.domain&&"; domain="+attributes.domain,attributes.secure?"; secure":""].join("")}key||(result={});for(var cookies=document.cookie?document.cookie.split("; "):[],rdecode=/(%[0-9A-Z]{2})+/g,i=0;i<cookies.length;i++){var parts=cookies[i].split("="),cookie=parts.slice(1).join("=");'"'===cookie.charAt(0)&&(cookie=cookie.slice(1,-1));try{var name=parts[0].replace(rdecode,decodeURIComponent);if(cookie=converter.read?converter.read(cookie,name):converter(cookie,name)||cookie.replace(rdecode,decodeURIComponent),this.json)try{cookie=JSON.parse(cookie)}catch(e){}if(key===name){result=cookie;break}key||(result[name]=cookie)}catch(e){}}return result}}return api.set=api,api.get=function(key){return api(key)},api.getJSON=function(){return api.apply({json:!0},[].slice.call(arguments))},api.defaults={},api.remove=function(key,attributes){api(key,"",extend(attributes,{expires:-1}))},api.withConverter=init,api}return init(function(){})}),"undefined"==typeof jsCookies&&"undefined"!=typeof Cookies)var jsCookies={get:function(c_name){return Cookies.get(c_name)},set:function(c_name,value,expiredays,expirehours,expiremins,expiresecs,options){var exdate=new Date;exdate.setDate(exdate.getDate()+(expiredays||0)),exdate.setHours(exdate.getHours()+(expirehours||0)),exdate.setMinutes(exdate.getMinutes()+(expiremins||0)),exdate.setSeconds(exdate.getSeconds()+(expiresecs||0));var set_expire_time=!(null==expiredays&&null==expiresecs&&null==expiremins&&null==expirehours),config=options||{};set_expire_time&&(config.expires=exdate),Cookies.set(c_name,value,config)},check:function(c_name){return!!Cookies.get(c_name)},destroy:function(c_name){Cookies.remove(c_name)}};
+</script>
+      <!-- end jsCookies --><!-- Preload iconfont -->
+    <link rel="preload" href="/wp-content/themes/hackerrank/assets/fonts/icons/hackerrank-icon.woff2" as="font" crossorigin="anonymous">
+<!-- end Preload iconfont --><!-- tracking utm parameters -->
+<script type="text/javascript" src="//info.hackerrank.com/rs/487-WAY-049/images/utmscript.js?v1"></script><script defer type="text/javascript" src="https://d2i34c80a0ftze.cloudfront.net/fullcircle.js?cid=9e206b0d-0014-42b9-8d39-c2b9094a2731&domain=hackerrank.com"></script><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45092266-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-45092266-11');
+</script></head>
+
+<body class="home page-template page-template-page-homepage-2022 page-template-page-homepage-2022-php page page-id-13170 wp-custom-logo fl-builder-2-8-2 page-homepage-2022 top-bar-display header-display">
+
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX2ZJF2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><div id="page" class="site">
+
+	<header id="masthead" class="hr__site-header header">
+	<a class="screen-reader-shortcut" href="#main">Skip to content</a>
+	<div class="hr_ribbon">
+	<div class="container">
+		<div class="hr_ribbon-notifications">
+			<div class="hr_ribbon-notification">
+	Hoodie for your thoughts: take the Developer Skills Survey for a chance to win free merch <a href="https://www.surveymonkey.com/r/devskillssurvey_2">Start survey</a>
+</div><div class="hr_ribbon-notification">
+	69% of tech leaders are preparing their teams for GenAI. Uncover more insights in the AI Skills Report. <a href="https://www.hackerrank.com/research/ai-skills-report/2024?utm_campaign=ai-skills-2024&utm_source=web-promo-popup&utm_medium=web">Read now</a>
+</div><div class="hr_ribbon-notification">
+	Adapt your hiring strategy for an AI-powered future. Uncover more insights in our latest whitepaper. <a href="https://www.hackerrank.com/lp/next-gen-hiring-wp/?utm_campaign=next-gen-hiring-whitepaper&utm_source=web-promo-popup&utm_medium=web">Read now</a>
+</div>
+		</div>
+				<div class="hr_ribbon-nav">
+			<a href="#" title="Previous Notification"></a>
+			<a href="#" title="Next Notification"></a>
+		</div>
+	</div>
+</div>
+	<div class="header-top"></div>
+	<div id="header-sticky">
+		<div class="hr__wrap">
+			<div class="container header-container">
+				<nav id="site-navigation" class="header-nav">
+					<div class="site-branding">
+						<a href="https://www.hackerrank.com/" data-analytics="LogoLink" data-attr1="homepage_2022" data-event-label="header" data-event-action="HackerRank_logo" data-attr2="navigation" class="custom-logo-link" rel="home" title="Hackerrank"><img width="334" height="36" src="https://www.hackerrank.com/wp-content/uploads/2018/08/hackerrank_logo.png" class="custom-logo" alt="HackerRank Logo" decoding="async" /></a>
+					</div>
+					<a href="#" class="header-back"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Back</title><path fill-rule="evenodd" clip-rule="evenodd" d="M8.53033 1.53033C8.82322 1.23744 8.82322 0.762563 8.53033 0.46967C8.23744 0.176777 7.76256 0.176777 7.46967 0.46967L0.46967 7.46967C0.397763 7.54158 0.343509 7.62445 0.306909 7.71291C0.270239 7.80134 0.25 7.89831 0.25 8C0.25 8.10169 0.270239 8.19866 0.306909 8.28709C0.343509 8.37555 0.397762 8.45842 0.46967 8.53033L7.46967 15.5303C7.76256 15.8232 8.23744 15.8232 8.53033 15.5303C8.82322 15.2374 8.82322 14.7626 8.53033 14.4697L2.81066 8.75H15C15.4142 8.75 15.75 8.41421 15.75 8C15.75 7.58579 15.4142 7.25 15 7.25H2.81066L8.53033 1.53033Z" fill="#0E141E"/></svg></a>
+					<a class="header-hamburger_container" data-analytics="MobileMenuLink" data-attr1="homepage_2022"  data-attr2="navigation">
+						<div class="header-hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
+					<div class="header-nav-menu"><div class="header-nav-menu-content">
+						<div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="menu-main-navigation"><li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-0 link-products'><div class="nav-item">Products</div>
+<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-products'><div class="nav-item">Products</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-screen'><a class="nav-item" href="/products/screen/">Screen</a><div class="nav-item-description"><p>Save time and accelerate your hiring.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-interview'><a class="nav-item" href="/products/interview/">Interview</a><div class="nav-item-description"><p>Conduct stellar technical interviews.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-engage'><a class="nav-item" href="https://www.hackerrank.com/products/engage/">Engage</a><div class="nav-item-description"><p>Promote your tech brand.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-skillup'><a class="nav-item" href="https://www.hackerrank.com/products/skillup/">SkillUp</a><div class="nav-item-description"><p>Mobilize your tech talent.</p>
+</div></li>
+	</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-features'><div class="nav-item">Features</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-certified-assessments'><a class="nav-item" href="/features/certified-assessments/">Certified Assessments</a><div class="nav-item-description"><p>Launch standardized, role-based tests in minutes.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-plagiarism-detection'><a class="nav-item" href="/features/plagiarism-detection/">Plagiarism Detection</a><div class="nav-item-description"><p>Ensure fairness with AI-powered plagiarism detection.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-real-world-questions'><a class="nav-item" href="https://www.hackerrank.com/features/real-world-questions/">Real World Questions</a><div class="nav-item-description"><p data-block-id="fdd8174c-64f8-470a-9a42-8b8fd68cc549" data-pm-slice="1 1 []">Assess technical hires with real-world coding questions.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-integrations'><a class="nav-item" href="https://www.hackerrank.com/integrations/">Integrations</a><div class="nav-item-description"><p>Seamlessly connect with your favorite tools.</p>
+</div></li>
+	</ul></div>
+</li>
+</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-0 link-solutions'><div class="nav-item">Solutions</div>
+<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-what-we-do'><div class="nav-item">What We Do</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-set-up-your-skills-strategy'><a class="nav-item" href="https://www.hackerrank.com/solutions/skills-strategy/">Set Up Your Skills Strategy</a></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-showcase-your-tech-brand'><a class="nav-item" href="https://www.hackerrank.com/solutions/talent-brand/">Showcase Your Tech Brand</a></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-optimize-your-hiring-process'><a class="nav-item" href="https://www.hackerrank.com/solutions/optimize-hiring/">Optimize Your Hiring Process</a></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-mobilize-your-internal-talent'><a class="nav-item" href="https://www.hackerrank.com/solutions/internal-mobility/">Mobilize Your Internal Talent</a></li>
+	</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-use-cases'><div class="nav-item">Use Cases</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-remote-hiring'><a class="nav-item" href="/solutions/remote-hiring/">Remote Hiring</a></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-university-hiring'><a class="nav-item" href="/solutions/university-hiring/">University Hiring</a></li>
+	</ul></div>
+</li>
+</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-0 link-resources'><div class="nav-item">Resources</div>
+<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-learn'><div class="nav-item">Learn</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-blog'><a class="nav-item" href="/blog/">Blog</a><div class="nav-item-description"><p>Hiring best practices and industry insights.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-roles-directory'><a class="nav-item" href="/roles-directory/">Roles Directory</a><div class="nav-item-description"><p>Explore the definitive directory of tech roles.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-resource-library'><a class="nav-item" href="/resources/">Resource Library</a><div class="nav-item-description"><p>Guides, datasheets, and data-driven content.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-customer-stories'><a class="nav-item" href="https://www.hackerrank.com/customers/">Customer Stories</a><div class="nav-item-description"><p>How leading companies use HackerRank.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-2024-ai-skills-report'><a class="nav-item" href="/research/ai-skills-report/2024">2024 AI Skills Report</a><div class="nav-item-description"><p>Research and insights on the state of AI skills.</p>
+</div></li>
+	</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children level-1 link-product-help'><div class="nav-item">Product Help</div>
+	<div class='sub-menu-container'><ul class='sub-menu'>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-october-release'><a class="nav-item" href="https://www.hackerrank.com/release/october-2024">October Release</a><div class="nav-item-description"><p>Discover what's new with HackerRank.</p>
+</div></li>
+<li class=' menu-item menu-item-type-post_type menu-item-object-page level-2 link-responsible-ai'><a class="nav-item" href="https://www.hackerrank.com/about-us/responsible-ai/">Responsible AI</a><div class="nav-item-description"><p data-block-id="814b7291-82e4-4633-a0c6-b21a71a8ce7b" data-pm-slice="1 1 []">Learn more about how we work with AI.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-whats-new'><a class="nav-item" href="/whats-new/">What's New</a><div class="nav-item-description"><p>Get the latest product news and updates.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-partners'><a class="nav-item" href="/partners/">Partners</a><div class="nav-item-description"><p>Learn more about the HackerRank Partner Network.</p>
+</div></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-2 link-support'><a class="nav-item" href="https://support.hackerrank.com/hc/en-us">Support</a><div class="nav-item-description"><p>Everything you need to know to get started.</p>
+</div></li>
+	</ul></div>
+</li>
+</ul></div>
+</li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-0 link-pricing'><a class="nav-item" href="/pricing/">Pricing</a></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-0 link-for-candidates'><a class="nav-item" href="/dashboard/">For candidates</a></li>
+<li class=' menu-item menu-item-type-custom menu-item-object-custom level-0 link-contact-us'><a class="nav-item" href="/contact-sales/">Contact Us</a></li>
+</ul></div>
+						<div class="header-nav-menu-right">
+							<div class="menu-top-navigation-container"><ul id="menu-top-navigation" class="menu-top-navigation"><li id="menu-item-12850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12850"><a href="/contact-sales/">Contact us</a></li>
+<li id="menu-item-12851" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12851"><a href="/access-account/">Log in</a></li>
+</ul></div>
+							<div class="menu-secondary-navigation-container"><ul id="menu-secondary-navigation" class="menu-secondary-navigation"><li id="menu-item-12869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12869"><a href="/dashboard/">For developers</a></li>
+<li id="menu-item-15112" class="menu_item_login menu-item menu-item-type-custom menu-item-object-custom menu-item-15112"><a href="/access-account/">Log in</a></li>
+<li id="menu-item-12704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12704"><a href="/request-demo/">Request demo</a></li>
+<li id="menu-item-12705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12705"><a href="/get-started/">Sign up</a></li>
+</ul></div>
+						</div>
+					</div></div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/wp-content/themes/hackerrank/js/headroom.min.js"></script>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main home22">
+		    <div class="home22-intro">
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-intro-content">
+			<h1 class="home22-intro-title">Skills speak louder than words</h1>
+			<div class="home22-intro-text"><p>We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.</p>
+<p><a href="/get-started/">Sign up</a> <a href="/request-demo/">Request demo</a></p>
+<p>Over 40% of developers worldwide and 3,000 companies use HackerRank</p>
+<div class="client_logos">
+			<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/peloton_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/atlassian_black.png" alt="" style="width:139px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/bloomberg_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/vmware_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/stripe_black.png" alt="" style="width:90px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/goldmansachs_black.png" alt="" style="width:121px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/adobe_black.png" alt="" style="width:89px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/linkedin_black.png" alt="" style="width:115px">
+	</div>
+</div>
+        </div>
+    </div></div>
+</div><div class="home22-hiring">
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-hiring-content">
+			<h2 class="home22-hiring-title">It’s not a pipeline problem. <span>It’s a spotlight problem.</span></h2>
+			<div class="home22-hiring-text"><p>Tech hiring needs a reset. From prepping for jobs and practicing coding to running a world-class technical interview, give developers the tools they need to showcase their skills, passion, and potential.</p>
+</div>
+			<div class="home22-hiring-nav">
+				<a href="#community">Prep</a>
+				<a href="#screen">Screen</a>
+				<a href="#interview">Interview</a>
+			</div>
+        </div>
+    </div></div>
+</div><div class="home22-community">
+	<div class="anchor" id="community"></div>
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-community-content">
+        	<div class="home22-community-content-bg"></div>
+			<div class="home22-community-col">
+				<div class="home22-community-label home22-label"><i class="cherry"></i>:: Coding practice ::</div>
+				<h3 class="home22-community-title">Explore and expand your skills.</h3>
+				<div class="home22-community-text"><p>Every idea has a first line of code. Prep for jobs and sharpen your skills alongside a global community of developers. Access the content you need to develop new skills – and land the job you’ve dreamed of.</p>
+<p><a href="https://www.hackerrank.com/auth/signup/" target="_blank" rel="noopener">Sign up and practice <i data-swapsvg="arrow_short"></i></a></p>
+</div>
+			</div>
+			<div class="home22-community-image"><img src="https://www.hackerrank.com/wp-content/uploads/2022/09/community.jpg" alt=""></div>
+        </div>
+    </div></div>
+</div><div class="home22-screen">
+	<div class="anchor" id="screen"></div>
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-screen-content">
+			<div class="home22-screen-label">:: Coding tests ::</div>
+			<h3 class="home22-screen-title h2"><span>Join the movement.</span> Screen on skills.</h3>
+			<div class="home22-screen-comparison" id="comparison">
+				<figure style="background-image:url(https://www.hackerrank.com/wp-content/uploads/2022/09/report-2.jpg);">
+					<div class="shade1"></div>
+					<div id="handle"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.90927 10.8241C5.43472 11.2535 4.7003 11.197 4.24835 10.745L0.350263 6.84692C0.112988 6.60965 0 6.30458 0 5.99951C0 5.69444 0.112988 5.38938 0.350263 5.1521L4.24835 1.25402C4.7003 0.802064 5.43472 0.74557 5.92057 1.16363C6.44031 1.62688 6.46291 2.42909 5.97706 2.91494L3.69471 5.2086C3.25405 5.64925 3.25405 6.36107 3.69471 6.80173L5.96576 9.07278C6.45161 9.55863 6.42902 10.3608 5.90927 10.8241ZM9.76223 1.25407L13.6603 5.15215C13.8976 5.38943 14.0106 5.69449 13.9994 6.01097C13.9994 6.31593 13.8864 6.62099 13.649 6.85838L9.75093 10.7565C9.29898 11.197 8.56456 11.2535 8.09001 10.8354C7.57026 10.3722 7.54767 9.57009 8.03352 9.08413L10.3272 6.80178C10.7677 6.36112 10.7677 5.6493 10.3272 5.20864L8.04481 2.92629C7.55897 2.44044 7.58145 1.63823 8.10131 1.17497C8.57586 0.74562 9.31028 0.802114 9.76223 1.25407Z" fill="white"/></svg></div>
+					<div id="handle"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.90927 10.8241C5.43472 11.2535 4.7003 11.197 4.24835 10.745L0.350263 6.84692C0.112988 6.60965 0 6.30458 0 5.99951C0 5.69444 0.112988 5.38938 0.350263 5.1521L4.24835 1.25402C4.7003 0.802064 5.43472 0.74557 5.92057 1.16363C6.44031 1.62688 6.46291 2.42909 5.97706 2.91494L3.69471 5.2086C3.25405 5.64925 3.25405 6.36107 3.69471 6.80173L5.96576 9.07278C6.45161 9.55863 6.42902 10.3608 5.90927 10.8241ZM9.76223 1.25407L13.6603 5.15215C13.8976 5.38943 14.0106 5.69449 13.9994 6.01097C13.9994 6.31593 13.8864 6.62099 13.649 6.85838L9.75093 10.7565C9.29898 11.197 8.56456 11.2535 8.09001 10.8354C7.57026 10.3722 7.54767 9.57009 8.03352 9.08413L10.3272 6.80178C10.7677 6.36112 10.7677 5.6493 10.3272 5.20864L8.04481 2.92629C7.55897 2.44044 7.58145 1.63823 8.10131 1.17497C8.57586 0.74562 9.31028 0.802114 9.76223 1.25407Z" fill="white"/></svg></div>
+      				<div id="divisor" style="background-image:url(https://www.hackerrank.com/wp-content/uploads/2022/09/resume.jpg);">
+						<div class="shade2"></div>
+					</div>
+				</figure>
+				<input type="range" min="0" max="10000" value="0" id="slider" oninput="moveDivisor()" onchange="moveDivisor()">
+			</div>
+			<div class="home22-screen-art">
+				<i class="cherry"></i>
+				<svg width="77" height="590" viewBox="0 0 77 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M26.894 12C26.894 12 25.8402 475.357 26.894 502.347C27.9479 529.337 48.1764 565.727 76.4257 589" stroke="#B7C9CC"/>
+					<path d="M64.4257 1H0.425663" stroke="#B7C9CC"/>
+				</svg>
+			</div>
+
+			<script>
+var divisor = document.getElementById("divisor"),
+    handle = document.getElementById("handle"),
+    slider = document.getElementById("slider");
+
+function moveDivisor() {
+	handle.style.left = slider.value/100+"%";
+	divisor.style.width = slider.value/100+"%";
+	if(slider.value/100 > 50){
+		document.querySelector('.shade1').style.opacity = slider.value/10000;
+		document.querySelector('.shade2').style.opacity = 0;
+	}else{
+		document.querySelector('.shade1').style.opacity = 0;
+		document.querySelector('.shade2').style.opacity = 1 - slider.value/10000;
+	}
+}
+
+window.onload = function() {
+	moveDivisor();
+};</script>
+			<div class="home22-screen-features">
+					<div class="home22-screen-features-item">
+		<div class="home22-screen-features-item-col">
+			<h4 class="home22-screen-features-item-title"><i class="cherry"></i>Leave the binary tree behind.</h4>
+			<p>Build coding questions using our library of dev-friendly content that challenges them to solve the problems they&#8217;d actually tackle on the job.</p>
+<p><a href="/get-started/hire/">Start free trial <i data-swapsvg="arrow_long"></i></a></p>
+
+		</div>
+		<div class="home22-screen-features-item-image">
+			<img src="https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png" alt="">
+		</div>
+	</div>	<div class="home22-screen-features-item">
+		<div class="home22-screen-features-item-col">
+			<h4 class="home22-screen-features-item-title"><i class="cherry"></i>Focus on what really matters: the code. </h4>
+			<p>Build skills-based coding tests with tech problems a developer would encounter on the job — and hire the team behind your next big idea.</p>
+<p><a href="/request-demo/">Request a demo <i data-swapsvg="arrow_long"></i></a></p>
+
+		</div>
+		<div class="home22-screen-features-item-image">
+			<img src="https://www.hackerrank.com/wp-content/uploads/2022/11/code-1.png" alt="">
+		</div>
+	</div>	<div class="home22-screen-features-item">
+		<div class="home22-screen-features-item-col">
+			<h4 class="home22-screen-features-item-title"><i class="cherry"></i>Identify top contenders </h4>
+			<p>Identify top contenders and invite them to meet your team using data-driven decisions that help level the playing field for developers everywhere.</p>
+<p><a href="/products/developer-skills-platform/screen/" target="_blank" rel="noopener">Learn more <i data-swapsvg="arrow_long"></i></a></p>
+
+		</div>
+		<div class="home22-screen-features-item-image">
+			<img src="https://www.hackerrank.com/wp-content/uploads/2022/09/contenders.png" alt="">
+		</div>
+	</div>
+			</div>
+        </div>
+    </div></div>
+</div><div class="home22-interview">
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-interview-content">
+			<div class="anchor" id="interview"></div>
+			<div class="home22-interview-label"><i class="cherry"></i>:: Technical interviews ::</div>
+			<h3 class="home22-interview-title h2">Interview like it’s <span>2024</span></h3>
+			<div class="home22-interview-text"><p>Ditch out of reach and out of touch interview questions about golf balls and 747s — and turn off your clunky screen share for good. Code, create, and collaborate with an IDE built to showcase real-world skills in a real-world environment.</p>
+<p><a href="https://www.hackerrank.com/products/developer-skills-platform/interview/" rel="noopener">Learn more</a></p>
+<blockquote>
+<p><em><img decoding="async" class="alignnone wp-image-13072 size-full" src="/wp-content/uploads/2022/10/tool1.png" alt="Icon illustrating code branching functionality in HackerRank's interview platform" width="73" height="74" /> <img decoding="async" class="alignnone wp-image-13073 size-full" src="/wp-content/uploads/2022/10/tool2.png" alt="grayed out GitHub Atom logo" width="65" height="60" /> <img decoding="async" class="alignnone wp-image-13074 size-full" src="/wp-content/uploads/2022/10/tool3.png" alt="Grayed out Zoom logo" width="90" height="89" /> <img decoding="async" class="alignnone wp-image-13075 size-full" src="/wp-content/uploads/2022/10/tool4.png" alt="grayed out Microsoft Visual Studio logo" width="95" height="81" /> <img decoding="async" class="alignnone wp-image-13076 size-full" src="/wp-content/uploads/2022/10/tool5.png" alt="Grayed out Google Docs logo" width="66" height="73" /> <img decoding="async" class="alignnone wp-image-13077 size-full" src="/wp-content/uploads/2022/10/tool6.png" alt="grayed out Microsoft Whiteboard logo" width="80" height="73" /> <img decoding="async" class="alignnone wp-image-13078 size-full" src="/wp-content/uploads/2022/10/tool7.png" alt="Icon illustrating the notepad functionality in HackerRank's interview platform" width="92" height="92" /></em></p>
+</blockquote>
+</div>
+			<div class="home22-interview-image"><img src="https://www.hackerrank.com/wp-content/uploads/2024/01/interview-2.png" alt=""></div>
+        </div>
+    </div></div>
+</div><div class="home22-about">
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-about-content">
+        	<div class="home22-about-cols">
+				<div class="home22-about-col">
+					<h3  class="home22-about-title h3">Every company is a tech company.<span>We’re here to help ‘em all.</span></h3>
+					<div class="home22-about-text"><p>More than 3,000 tech teams, representing all industries and from countries around the world, trust HackerRank to connect with developers and add cutting-edge skills to their teams.</p>
+<p>That includes 25% of the Fortune 100 — and that moonshot startup that just came out of stealth.</p>
+</div>
+				</div>
+				<div class="home22-about-testimonials">
+					<div class="home22-about-testimonials-list"><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/ubs_black.png" style="width:90px" alt="">
+	<p>We’re discovering new ways of attracting candidates to the organization. By using HackerRank, we’re actually improving the tech image of UBS.</p>
+
+</div><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/vmware_black.png" style="width:91px" alt="">
+	<p>HackerRank has actually allowed us to look for diamonds in the rough that our old process<br />
+didn’t give us the time<br />
+or resources to look for.</p>
+
+</div><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/booking_black.png" style="width:90px" alt="">
+	<p>We’re promoting our jobs to a much wider audience and allowing candidates to be selected for interviews purely based on the merit of their coding abilities.</p>
+
+</div><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/doordash_black.png" style="width:90px" alt="">
+	<p>We cut down hiring time by months, which was huge for us. We owe that to HackerRank.</p>
+
+</div><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/vanguard_black.png" style="width:90px" alt="">
+	<p>HackerRank is a critical piece of our candidate’s experience, and hitting the right tone is just as important as identifying good candidates.</p>
+
+</div><div class="home22-about-testimonials-item">
+	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/wish_black.png" style="width:90px" alt="">
+	<p>HackerRank has been a huge help in making it easy to assess the skills of all the candidates we<br />
+interview. Without it, the process of scaling our engineering team would have been very cumbersome.</p>
+
+</div></div>
+				</div>
+			</div>
+			<div class="home22-about-logos">
+<div class="client_logos">
+			<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/peloton_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/atlassian_black.png" alt="" style="width:139px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/bloomberg_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/vmware_black.png" alt="" style="width:91px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/stripe_black.png" alt="" style="width:90px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/goldmansachs_black.png" alt="" style="width:121px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/adobe_black.png" alt="" style="width:89px">	<img src="https://www.hackerrank.com/wp-content/uploads/2022/10/linkedin_black.png" alt="" style="width:115px">
+	</div>
+</div>
+        </div>
+    </div></div>
+</div><div class="home22-links">
+    <div class="hr_container"><div class="hr_content">
+        <div class="home22-links-content">
+			<div class="home22-links-item">
+	<h3 class="h3 home22-links-item-title">Practice coding challenges & <span>prep for interviews</span></h3>
+	<p>Start practicing your skills now and land the job<br />
+of your dreams.</p>
+<p><a href="https://www.hackerrank.com/auth/signup/">Join the community</a></p>
+
+</div><div class="home22-links-item">
+	<h3 class="h3 home22-links-item-title">Get started <span>hiring with HackerRank</span></h3>
+	<p>More than 3,000 tech teams, representing all industries and from countries around the world, trust HackerRank</p>
+<p><a href="https://www.hackerrank.com/request-demo/">Request a demo</a></p>
+
+</div>
+        </div>
+    </div></div>
+</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+			<footer id="colophon" class="hr__site-footer">
+            <div class="container">
+            	<div class="menu-footer-menu-container"><ul id="footer-menu" class="menu"><li id="menu-item-8451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8451 menu-item-depth-0"><a  href="https://www.hackerrank.com/products" data-event-label="footer" data-event-action="Products" >Products<span class="menu-item__bullets"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-8455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8455 menu-item-depth-1"><a  href="https://www.hackerrank.com/products/screen/" data-event-label="footer" data-event-action="Screen" >Screen</a>	<li id="menu-item-8456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8456 menu-item-depth-1"><a  href="https://www.hackerrank.com/products/interview/" data-event-label="footer" data-event-action="Interview" >Interview</a>	<li id="menu-item-15103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15103 menu-item-depth-1"><a  href="https://www.hackerrank.com/products/engage/" data-event-label="footer" data-event-action="Engage" >Engage</a>	<li id="menu-item-15104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15104 menu-item-depth-1"><a  href="https://www.hackerrank.com/products/skillup/" data-event-label="footer" data-event-action="SkillUp" >SkillUp</a>	<li id="menu-item-8457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8457 menu-item-depth-1"><a  href="https://www.hackerrank.com/features/certified-assessments/" data-event-label="footer" data-event-action="Certified Assessments" >Certified Assessments</a>	<li id="menu-item-8458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8458 menu-item-depth-1"><a  href="https://www.hackerrank.com/features/plagiarism-detection/" data-event-label="footer" data-event-action="Plagiarism Detection" >Plagiarism Detection</a>	<li id="menu-item-14704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14704 menu-item-depth-1"><a  href="https://www.hackerrank.com/features/real-world-questions/" data-event-label="footer" data-event-action="Real World Questions" >Real World Questions</a></ul>
+<li id="menu-item-6300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6300 menu-item-depth-0"><a  href="/products/developer-skills-platform/" data-event-label="footer" data-event-action="Solutions" >Solutions<span class="menu-item__bullets"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-14592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14592 menu-item-depth-1"><a  href="https://www.hackerrank.com/solutions/skills-strategy/" data-event-label="footer" data-event-action="Set Up a Skills Strategy" >Set Up a Skills Strategy</a>	<li id="menu-item-14590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14590 menu-item-depth-1"><a  href="https://www.hackerrank.com/solutions/talent-brand/" data-event-label="footer" data-event-action="Showcase Your Talent Brand" >Showcase Your Talent Brand</a>	<li id="menu-item-14589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14589 menu-item-depth-1"><a  href="https://www.hackerrank.com/solutions/optimize-hiring/" data-event-label="footer" data-event-action="Optimize Your Hiring Process" >Optimize Your Hiring Process</a>	<li id="menu-item-14591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14591 menu-item-depth-1"><a  href="https://www.hackerrank.com/solutions/internal-mobility/" data-event-label="footer" data-event-action="Mobilize Your Internal Talent" >Mobilize Your Internal Talent</a></ul>
+<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-605 menu-item-depth-0"><a  href="https://www.hackerrank.com/resources/" data-event-label="footer" data-event-action="Resources" >Resources<span class="menu-item__bullets"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-12274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12274 menu-item-depth-1"><a  href="/blog/" data-event-label="footer" data-event-action="Blog" >Blog</a>	<li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42 menu-item-depth-1"><a  href="/customers/" data-event-label="footer" data-event-action="Customer Stories" >Customer Stories</a>	<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47 menu-item-depth-1"><a  href="/roles-directory" data-event-label="footer" data-event-action="Roles Directory" >Roles Directory</a>	<li id="menu-item-598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-598 menu-item-depth-1"><a  href="https://www.hackerrank.com/partners/" data-event-label="footer" data-event-action="Partners" >Partners</a>	<li id="menu-item-14323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14323 menu-item-depth-1"><a  href="/integrations/" data-event-label="footer" data-event-action="Integrations" >Integrations</a>	<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49 menu-item-depth-1"><a  href="https://www.hackerrank.com/whats-new/" data-event-label="footer" data-event-action="What&#8217;s New" >What&#8217;s New</a></ul>
+<li id="menu-item-813" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-813 menu-item-depth-0"><a  href="https://www.hackerrank.com/about-us/" data-event-label="footer" data-event-action="About Us" >About Us<span class="menu-item__bullets"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-736 menu-item-depth-1"><a  href="https://www.hackerrank.com/careers/" data-event-label="footer" data-event-action="Careers" >Careers</a>	<li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-60 menu-item-depth-1"><a  href="/about-us/our-team/" data-event-label="footer" data-event-action="Our Team" >Our Team</a>	<li id="menu-item-7428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7428 menu-item-depth-1"><a  href="https://www.hackerrank.com/about-us/newsroom/" data-event-label="footer" data-event-action="Newsroom" >Newsroom</a>	<li id="menu-item-12849" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12849 menu-item-depth-1"><a  href="https://status.hackerrank.com/" data-event-label="footer" data-event-action="Status" >Status</a>	<li id="menu-item-4761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4761 menu-item-depth-1"><a  href="https://www.hackerrank.com/trust/" data-event-label="footer" data-event-action="Trust" >Trust</a>	<li id="menu-item-65" class="menu-item-display-large hr__social-icons hr__social-icons--round-colored menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-65 menu-item-depth-1"><a  href="#" data-event-label="footer" data-event-action="Social Links" >Social Links<span class="menu-item__bullets"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-6283" class="hr__icon-hexagon-logo menu-item--no-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-6283 menu-item-depth-2"><a  href="/" data-event-label="footer" data-event-action="HackerRank" >HackerRank</a>		<li id="menu-item-68" class="footer-icon-fb menu-item menu-item-type-custom menu-item-object-custom menu-item-68 menu-item-depth-2"><a  target="_blank"  href="https://www.facebook.com/hackerrank/" data-event-label="footer" data-event-action="Facebook" >Facebook</a>		<li id="menu-item-66" class="footer-icon-li menu-item menu-item-type-custom menu-item-object-custom menu-item-66 menu-item-depth-2"><a  target="_blank"  href="https://www.linkedin.com/company/hackerrank" data-event-label="footer" data-event-action="LinkedIn" >LinkedIn</a>		<li id="menu-item-67" class="footer-icon-tw menu-item menu-item-type-custom menu-item-object-custom menu-item-67 menu-item-depth-2"><a  target="_blank"  href="https://twitter.com/hackerrank" data-event-label="footer" data-event-action="Twitter" >Twitter</a>		<li id="menu-item-14753" class="footer-icon-ig menu-item menu-item-type-custom menu-item-object-custom menu-item-14753 menu-item-depth-2"><a  href="https://www.instagram.com/hackerrank/" data-event-label="footer" data-event-action="Instagram" >Instagram</a>	</ul>
+	<li id="menu-item-6289" class="menu-item-display-large menu-item--no-link hr__footer-copyright menu-item menu-item-type-custom menu-item-object-custom menu-item-6289 menu-item-depth-1"><a  href="#" data-event-label="footer" data-event-action="Copyright © 2024 HackerRank" >Copyright © 2024 HackerRank</a>	<li id="menu-item-6291" class="menu-item-display-large menu-item--smaller menu-item-privacy menu-item menu-item-type-custom menu-item-object-custom menu-item-6291 menu-item-depth-1"><a  href="https://www.hackerrank.com/privacy/" data-event-label="footer" data-event-action="Privacy Policy" >Privacy Policy</a></ul>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-51 menu-item-depth-0"><a  href="/get-started/" data-event-label="footer" data-event-action="Get Started" >Get Started<span class="menu-item__bullets"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-12277" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12277 menu-item-depth-1"><a  href="/pricing" data-event-label="footer" data-event-action="Pricing" >Pricing</a>	<li id="menu-item-12276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12276 menu-item-depth-1"><a  href="https://www.hackerrank.com/get-started/hire-now" data-event-label="footer" data-event-action="Free Trial" >Free Trial</a>	<li id="menu-item-12848" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12848 menu-item-depth-1"><a  href="/products/contact-us/" data-event-label="footer" data-event-action="Contact Us" >Contact Us</a>	<li id="menu-item-12275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12275 menu-item-depth-1"><a  href="https://www.hackerrank.com/request-demo/" data-event-label="footer" data-event-action="Request Demo" >Request Demo</a>	<li id="menu-item-12847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12847 menu-item-depth-1"><a  href="https://support.hackerrank.com/" data-event-label="footer" data-event-action="Product Support" >Product Support</a>	<li id="menu-item-12273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12273 menu-item-depth-1"><a  href="https://www.hackerrank.com/dashboard" data-event-label="footer" data-event-action="For Developers" >For Developers</a>	<li id="menu-item-6284" class="menu-item-display-mobile hr__social-icons hr__social-icons--round-colored menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-6284 menu-item-depth-1"><a  href="#" data-event-label="footer" data-event-action="Social Links" >Social Links<span class="menu-item__bullets"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-6285" class="hr__icon-hexagon-logo menu-item--no-link menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-6285 menu-item-depth-2"><a  href="/" data-event-label="footer" data-event-action="HackerRank" >HackerRank</a>		<li id="menu-item-6286" class="footer-icon-fb menu-item menu-item-type-custom menu-item-object-custom menu-item-6286 menu-item-depth-2"><a  target="_blank"  href="https://www.facebook.com/hackerrank/" data-event-label="footer" data-event-action="Facebook" >Facebook</a>		<li id="menu-item-6287" class="footer-icon-li menu-item menu-item-type-custom menu-item-object-custom menu-item-6287 menu-item-depth-2"><a  target="_blank"  href="https://www.linkedin.com/company/hackerrank" data-event-label="footer" data-event-action="LinkedIn" >LinkedIn</a>		<li id="menu-item-6288" class="footer-icon-tw menu-item menu-item-type-custom menu-item-object-custom menu-item-6288 menu-item-depth-2"><a  target="_blank"  href="https://twitter.com/hackerrank" data-event-label="footer" data-event-action="Twitter" >Twitter</a>		<li id="menu-item-14752" class="footer-icon-ig menu-item menu-item-type-custom menu-item-object-custom menu-item-14752 menu-item-depth-2"><a  href="https://www.instagram.com/hackerrank/" data-event-label="footer" data-event-action="Instagram" >Instagram</a>	</ul>
+	<li id="menu-item-6290" class="menu-item-display-mobile menu-item--no-link hr__footer-copyright menu-item menu-item-type-custom menu-item-object-custom menu-item-6290 menu-item-depth-1"><a  href="#" data-event-label="footer" data-event-action="Copyright © 2024 HackerRank" >Copyright © 2024 HackerRank</a>	<li id="menu-item-3765" class="menu-item-display-mobile menu-item--smaller menu-item-privacy menu-item menu-item-type-custom menu-item-object-custom menu-item-3765 menu-item-depth-1"><a  href="https://www.hackerrank.com/privacy/" data-event-label="footer" data-event-action="Privacy Policy" >Privacy Policy</a></ul>
+</ul></div>
+            </div>
+        </footer></div><!-- #page -->
+        <!-- Some Black Magic for Internet Explorer -->
+
+        <!--[if lt IE 10]>
+        <script src="https://hrcdn.net/hackerrank/assets/jquery-plugins/jQuery.XDomainRequest-28488b2668d975b95331be79582a53fc.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js" type="text/javascript"></script>
+        <![endif]-->
+
+        <!-- Chrome Frame for IE6 -->
+        <!--[if lt IE 7 ]>
+        <script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+        <![endif]-->
+
+        <!--[if lte IE 9]>
+        <script>
+            IE_BROWSER = true
+        </script>
+        <![endif]-->
+
+
+        
+        
+            
+                        
+        
+        <link rel='stylesheet' id='search-filter-plugin-styles-css' href='https://www.hackerrank.com/wp-content/plugins/search-filter-pro/public/assets/css/search-filter.min.css?ver=2.5.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/themes/hackerrank/js/src/hr-helper/hr-helper.min.js?ver=5.7" id="hackerrank-helper-js"></script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/themes/hackerrank/js/src/slick/slick.min.js?ver=5.7" id="slick-js"></script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/themes/hackerrank/js/dist/scripts.min.js?ver=1729109314" id="hackerrank-source-scripts-js"></script>
+<script type="text/javascript" id="heateor_sss_sharing_js-js-before">
+/* <![CDATA[ */
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://www.hackerrank.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://www.hackerrank.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://www.hackerrank.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.67" id="heateor_sss_sharing_js-js"></script>
+<script type="text/javascript" src="https://www.hackerrank.com/wp-content/themes/hackerrank/js/dist/cookieconsent/cookieconsent.min.js?ver=6.4.2" id="cookie-consent-js"></script>
+<script type="text/javascript" id="cookie-consent-js-after">
+/* <![CDATA[ */
+                window.addEventListener("load", function(){
+                    window.cookieconsent.initialise({
+                        cookie: {
+                            name: 'show_cookie_banner',
+                            domain: 'hackerrank.com'
+                        },
+                        content: {
+                            message: 'We use cookies to ensure you have the best browsing experience on our website. Please read our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="https://www.hackerrank.com/privacy#cookies" target="_blank">cookie policy</a> for more information about how we use cookies.',
+                            messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a></span>',
+                            link: 'Find out more.',
+                            allow: 'Ok',
+                            href: 'https://www.hackerrank.com/privacy#cookies',
+                            target: '_blank'
+                        },
+                        elements: {
+                            allow:
+                                '<a aria-label="allow cookies" role=button tabindex="0"  class="cc-btn cc-false">{{allow}}</a>'
+                        },
+                        layout: 'hr__cn-layouts',
+                        layouts: {
+                            'hr__cn-layouts': '<div class="hr__cookie_notification"> {{messagelink}}{{compliance}} </div>',
+                        },
+                        type: 'opt-in'
+                    })});
+/* ]]> */
+</script>
+<!-- tracking hrutm_ parameters -->
+<script type="text/javascript">
+(function(){
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split('&');
+  var trackingData;
+  for(var i = 0; i < sURLVariables.length; i++) {
+    var sParameterName = sURLVariables[i].split('=');
+    if(sParameterName[0] == 'utm_source') {
+      trackingData = decodeURIComponent(escape(sParameterName[1]));
+      hr_metrics.track(trackingData.event_name, trackingData)
+    } else if (sParameterName[0] == 'ad-campaign' && sParameterName[1]=='Mkt1010415') {
+      if(typeof HR !== "undefined" && HR !== null && (!HR.PREFETCH_DATA.profile || !HR.PREFETCH_DATA.profile.created_at)){
+        document.cookie = "fb_ad_campaign_source="+sParameterName[1]+";path=/";
+      }
+    }
+  }
+})();
+</script><script id="profitwell-js" data-pw-auth="0572b5a3d0854fd655f0e29b8246a1e4">
+    /* DO NOT DELETE - this code is used to accept our payments or send data to ProfitWell*/
+    (function(i,s,o,g,r,a,m){i[o]=i[o]||function(){(i[o].q=i[o].q||[]).push(arguments)};
+    a=s.createElement(g);m=s.getElementsByTagName(g)[0];a.async=1;a.src=r+'?auth='+
+    s.getElementById(o+'-js').getAttribute('data-pw-auth');m.parentNode.insertBefore(a,m);
+    })(window,document,'profitwell','script','https://public.profitwell.com/js/profitwell.js');
+
+    profitwell('start', {});
+</script><script>
+if(typeof MktoForms2 !== 'undefined'){
+MktoForms2.whenReady(function (form) {
+    form.addHiddenFields({ Page_URL__c : document.location.href });
+});
+}
+</script><script id="teknklFormsPlus-Util-1.0.5" src="https://info.hackerrank.com/rs/487-WAY-049/images/teknkl-formsplus-1.0.5.js"></script>
+<script src="https://info.hackerrank.com/rs/487-WAY-049/images/known-utm-script.js"></script></body>
+</html>
