@@ -1,0 +1,15 @@
+{
+  "name": "food-delivery-website",
+  "version": "1.0.0",
+  "description": "Landing page website for a fictional food delivery company  called **\"OMNIFOOD\"** build using modern **HTML5** , **CSS3** ,  and **JAVASCRIPT**. ![Live project](project.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
