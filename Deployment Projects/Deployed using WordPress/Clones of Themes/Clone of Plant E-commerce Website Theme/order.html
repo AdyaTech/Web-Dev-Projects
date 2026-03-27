@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - ReaderHub</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
+header { display:flex; justify-content:space-between; align-items:center; padding:15px 30px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+.logo { font-size:1.5em; font-weight:bold; }
+.cart { position:relative; cursor:pointer; }
+.cart img { width:30px; }
+.cart-count { position:absolute; top:-8px; right:-8px; background:red; color:#fff; border-radius:50%; padding:2px 6px; font-size:0.8em; }
+
+.container { max-width:500px; margin:50px auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+h1 { text-align:center; margin-bottom:30px; }
+
+form { display:flex; flex-direction:column; gap:15px; }
+form label { font-weight:bold; }
+form input, form textarea { padding:10px; font-size:1em; border-radius:5px; border:1px solid #ccc; width:100%; box-sizing:border-box; }
+
+.error { color:red; font-size:0.9em; margin-top:5px; }
+
+.total-amount { text-align:right; font-size:1.2em; font-weight:bold; margin-top:20px; }
+.pay-btn { margin-top:15px; padding:15px; background:#4CAF50; color:#fff; border:none; border-radius:5px; font-size:1em; cursor:pointer; width:100%; display:flex; align-items:center; justify-content:center; gap:10px; }
+.pay-btn:hover { background:#45a049; }
+.pay-success { background:#2196F3 !important; } /* Blue after success */
+
+.continue-shopping {
+    display: none; /* hidden by default */
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.continue-shopping:hover {
+    background: #555;
+}
+.cart-page { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
+.cart-page header { display:flex; justify-content:space-between; align-items:center; padding:15px 30px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+.cart-page .logo { font-size:1.5em; font-weight:bold; }
+.cart-page .cart { position:relative; cursor:pointer; }
+.cart-page .cart img { width:30px; }
+.cart-page .cart-count { position:absolute; top:-8px; right:-8px; background:red; color:#fff; border-radius:50%; padding:2px 6px; font-size:0.8em; }
+
+.cart-page .cart-container { max-width:1200px; margin:50px auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+.cart-page .cart-item { display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ddd; padding:15px 0; }
+.cart-page .cart-item img { width:100px; border-radius:5px; }
+.cart-page .item-details { flex:1; margin-left:20px; }
+.cart-page .item-details h2 { margin:0 0 10px 0; }
+.cart-page .quantity { display:flex; align-items:center; gap:10px; }
+.cart-page .quantity button { padding:5px 10px; cursor:pointer; }
+.cart-page .quantity input { width:50px; text-align:center; }
+.cart-page .remove-btn { background:#e91e63; color:#fff; border:none; padding:5px 10px; cursor:pointer; border-radius:5px; }
+.cart-page .remove-btn:hover { background:#d81b60; }
+.cart-page .total { text-align:right; margin-top:20px; font-size:1.2em; }
+.cart-page .continue-shopping { display:inline-block; margin-top:20px; padding:10px 20px; background:#333; color:#fff; text-decoration:none; border-radius:5px; }
+.cart-page .continue-shopping:hover { background:#555; }
+.cart-page .checkout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cart-page .checkout-btn:hover {
+    background: #45a049;
+}
+    nav a { margin-right:20px; text-decoration:none; color:#333; }
+    nav a:hover { color:#e91e63; }
+</style>
+</head>
+<body>
+
+<header>
+      <div class="logo"><a href="index.html"><img width="150" src="IMAGES/white logo.png"></a></div>
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Books</a>
+    
+    <a href="contact.html">Contact</a>
+  </nav>
+      <div class="cart">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart">
+          <div class="cart-count" id="cart-count">0</div>
+      </div>
+  </header>
+
+<div class="container">
+    <h1>Payment Details</h1>
+
+    <form id="payment-form">
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name">
+            <div class="error" id="error-name"></div>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div class="error" id="error-email"></div>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone">
+            <div class="error" id="error-phone"></div>
+        </div>
+
+        <div>
+            <label for="address">Address</label>
+            <textarea id="address" rows="3"></textarea>
+            <div class="error" id="error-address"></div>
+        </div>
+    </form>
+
+    <!-- Total Amount -->
+    <div class="total-amount" id="total-amount">Total: ₹0</div>
+
+    <!-- Pay Button -->
+    <button class="pay-btn" id="pay-btn" onclick="pay()">Pay</button>
+
+    <!-- Continue Shopping Link (hidden by default) -->
+    <a href="product.html" class="continue-shopping" id="continue-shopping">Continue Shopping</a>
+</div>
+
+<script>
+// Load cart and display total
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartCountEl = document.getElementById('cart-count');
+cartCountEl.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+let total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+document.getElementById('total-amount').textContent = `Total: ₹${total}`;
+
+// Pay function with inline errors and success checkmark
+function pay() {
+    // Clear previous errors
+    document.getElementById('error-name').textContent = '';
+    document.getElementById('error-email').textContent = '';
+    document.getElementById('error-phone').textContent = '';
+    document.getElementById('error-address').textContent = '';
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const address = document.getElementById('address').value.trim();
+
+    let valid = true;
+
+    if(!name) { document.getElementById('error-name').textContent = 'Please enter your full name'; valid = false; }
+    if(!email || !/^\S+@\S+\.\S+$/.test(email)) { document.getElementById('error-email').textContent = 'Please enter a valid email'; valid = false; }
+    if(!phone || !/^\d{10}$/.test(phone)) { document.getElementById('error-phone').textContent = 'Please enter a valid 10-digit phone number'; valid = false; }
+    if(!address) { document.getElementById('error-address').textContent = 'Please enter your address'; valid = false; }
+
+    if(!valid) return;
+
+    // Success: change button to blue with checkmark
+    const payBtn = document.getElementById('pay-btn');
+    payBtn.classList.add('pay-success');
+    payBtn.innerHTML = '&#10003; Paid';
+    payBtn.disabled = true;
+
+    // Show continue shopping link
+    document.getElementById('continue-shopping').style.display = 'inline-block';
+
+    // Clear cart
+    localStorage.removeItem('cart');
+    cartCountEl.textContent = 0;
+}
+
+function goToCart() { window.location.href = 'democart.html'; }
+</script>
+
+</body>
+</html>
